@@ -14,7 +14,7 @@ markdown: kramdown
 
 
 ### content configuration ###
-title:       "Beyond Nebula"
+title:       "Beyond Nebula 2!"
 keywords:    "beyond nebula, cardboard game"
 description: "A new awesome game!"
 source_link: "https://github.com/t413/SinglePaged"
