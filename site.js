@@ -91,5 +91,11 @@ $(document).ready(function (){
         }
 	});
 
+	
+    $(".slick-gallery").slick({
+        dots: true,
+        speed: 500
+    });
+	
 });
 
