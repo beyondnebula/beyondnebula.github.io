@@ -92,7 +92,7 @@ $(document).ready(function (){
 	});
 
 	
-    $(".slick-gallery").slick({
+    $(".single-item").slick({
         dots: true,
         speed: 500
     });
