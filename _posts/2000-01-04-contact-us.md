@@ -5,7 +5,9 @@ color: black
 fa-icon: envelope
 ---
 
-## Contact us
+# Contact us
+
+Have any question? Want to give us a sugestion? Just love our game and want to say some lovely words? Feel free to use the form below:
 
 <form action="https://formspree.io/support@beyondnebula.com" method="POST">
   <input type="text" name="name" placeholder="Your name">
