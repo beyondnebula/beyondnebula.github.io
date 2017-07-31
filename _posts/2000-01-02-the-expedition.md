@@ -5,18 +5,7 @@ color: black
 fa-icon: graduation-cap
 ---
 
-
-# Beyond Nebula - The Expedition
-
-
-
-## Introduction
-
-This is a 4x type of game (eXplore, eXpand, eXploit and eXterminate) and presents cool design features in order to stablish a quick connection between players and the game itself.
-
-The game comes in the format of 2 players game pack - ready to play. If you enjoy to develop your own strategies to defeat the oponent then this is the right game for you. 
-
-## Story Line
+## Beyond Nebula
 
 ### Introduction
 
