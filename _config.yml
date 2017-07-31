@@ -14,13 +14,13 @@ markdown: kramdown
 
 
 ### content configuration ###
-title:       "Beyond Nebula 2!"
-keywords:    "beyond nebula, cardboard game"
-description: "A new awesome game!"
-source_link: "https://github.com/t413/SinglePaged"
+title:       "Beyond Nebula"
+keywords:    "beyond nebula, board game"
+description: "The new Beyond Nebula board game will make you keep playing with your friends for hours."
+source_link: "https://beyondnebula.com"
 favicon:     "img/favicon.ico"
 touch_icon:  "img/apple-touch-icon.png"
-google_analytics_key: UA-49607422-1 ## put YOUR key here to enable tracking! (blank to disable)
+google_analytics_key: UA-103698219-1 ## put YOUR key here to enable tracking! (blank to disable)
 
 
 ### template colors, used site-wide via css ###
