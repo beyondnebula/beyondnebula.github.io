@@ -4,7 +4,6 @@ bg: white
 color: black
 fa-icon: book
 ---
-
 ### Introduction
 
 In the year is 2200, Earth faced one of its worst crises yet. High levels of pollution and carbon oxide emissions have caused dramatic changes in the atmosphere over the years that made even breathing a trying task. Bioengineers desperately tried to remake and breed animal species long made extinct by Humanity’s actions to feed its population. The planet has been gradually weakened as the consumption of natural resources ramped.
