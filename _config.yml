@@ -26,7 +26,8 @@ google_analytics_key: UA-103698219-1 ## put YOUR key here to enable tracking! (b
 ### template colors, used site-wide via css ###
 colors:
   white:     '#f8f8f8'
-  Grey:      '#C0C0C0'
+  black:     '#111111'
+  grey:      '#C0C0C0'
   blue:      '#49a7e9'
   green:     '#9bcf2f'
   purple:    '#c869bf'
