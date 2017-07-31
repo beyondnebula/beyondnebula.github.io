@@ -2,10 +2,8 @@
 title: "New to Beyond Nebula?"
 bg: white
 color: black
-fa-icon: graduation-cap
+fa-icon: book
 ---
-
-## Beyond Nebula
 
 ### Introduction
 
