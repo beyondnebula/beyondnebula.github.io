@@ -1,40 +1,58 @@
 ---
 layout: page
+js: /js/buy.js
 bigimg: /img/buy_game.jpg
 ---
 
 ### Box Contents
-Each box of Beyond Nebula has the following contents:
+- Set of 54 chips for each player (this is a two player game)
+- Soft table board 59cm x 42cm
+- Set of dices: 5x D20, 1x D10, 1x D6
 
-- x dados
-- y fichas
-- 1 manual
-- 1 board of 100x100cm
-
-### Physical specifications
-
-- Size: 120 x 120 x 20 cm
-- Weight: 500g
+### Box Specifications
+- Size:  8cm x 8cm x 43cm
+- Weight: 430g
 
 ### Shipping
+We'll usually ship within 5 business days.
 
-We'll ship within 5 business days.
-Please make sure you **choose the correct shipping region when buying.**
+The total price varies according to shipping region, corresponding shipping price and applicable tax rate. Please make sure you **choose the appropriate shipping region when buying.**
 
 Thank you!
 
 
 <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
-<input type="hidden" name="cmd" value="_s-xclick">
-<input type="hidden" name="hosted_button_id" value="U8NW3WZYB7YTS">
-<table>
-<tr><td><input type="hidden" name="on0" value="Total price according to shipping">Total price according to shipping</td></tr><tr><td><select name="os0">
-  <option value="Portugal">Portugal €70,00 EUR</option>
-  <option value="Europe">Europe €80,00 EUR</option>
-  <option value="Rest of the World">Rest of the World €90,00 EUR</option>
-</select> </td></tr>
-</table>
-<input type="hidden" name="currency_code" value="EUR">
-<input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_buynowCC_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
-<img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+  <label>Choose your region:</label>
+  <select id="region_selection" name="region">
+    <option value="pt">Portugal </option>
+    <option value="eu">European Union</option>
+    <option value="non_eu">Europe outside EU</option>
+    <option value="world">World</option>
+  </select>
+  <br />
+
+  <div>
+    <label>Price:</label> <span id="label_price"></span> <span>EUR</span>
+  </div>
+  <div>
+    <label>Tax:</label> <span id="label_tax"></span> <span>EUR</span>
+  </div>
+  <div>
+    <label>Shipping:</label> <span id="label_shipping"></span> <span>EUR</span>
+  </div>
+  <div>
+    <label>Total Price:</label> <span id="label_total"></span> <span>EUR</span>
+  </div>
+  <br />
+
+  <input type="hidden" name="amount" value="">
+  <input type="hidden" name="tax" value="">
+  <input type="hidden" name="shipping" value="">
+
+  <input type="hidden" name="cmd" value="_s-xclick">
+  <input type="hidden" name="hosted_button_id" value="U8NW3WZYB7YTS">
+  <input type="image" src="https://www.paypalobjects.com/webstatic/en_US/i/btn/png/btn_buynow_107x26.png" alt="Buy Now" name="submit">
+  <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
 </form>
+
+<img src="https://www.paypalobjects.com/webstatic/en_US/i/buttons/cc-badges-ppmcvdam.png" alt="Credit Card Badges">
