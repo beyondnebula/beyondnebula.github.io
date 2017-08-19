@@ -45,7 +45,7 @@ Thank you!
   </div>
   <br />
 
-  <input type="hidden" name="cmd" value="_s-xclick">
+  <input type="hidden" name="cmd" value="_xclick">
   <input type="hidden" name="hosted_button_id" value="U8NW3WZYB7YTS">
   <input type="hidden" name="amount" value="">
   <input type="hidden" name="tax" value="">
