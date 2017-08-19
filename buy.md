@@ -1,8 +1,6 @@
 ---
 layout: page
-use-site-title: true
-subtitle: Order here to play with your friends!
-bigimg: "img/buy_game.jpg"
+bigimg: /img/buy_game.jpg
 ---
 
 ### Box Contents
@@ -31,9 +29,9 @@ Thank you!
 <input type="hidden" name="hosted_button_id" value="U8NW3WZYB7YTS">
 <table>
 <tr><td><input type="hidden" name="on0" value="Total price according to shipping">Total price according to shipping</td></tr><tr><td><select name="os0">
-  <option value="Portugal">Portugal €70.00 EUR</option>
-  <option value="Europe">Europe €80.00 EUR</option>
-  <option value="Rest of the World">Rest of the World €90.00 EUR</option>
+  <option value="Portugal">Portugal €70,00 EUR</option>
+  <option value="Europe">Europe €80,00 EUR</option>
+  <option value="Rest of the World">Rest of the World €90,00 EUR</option>
 </select> </td></tr>
 </table>
 <input type="hidden" name="currency_code" value="EUR">

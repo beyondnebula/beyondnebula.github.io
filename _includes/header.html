@@ -34,7 +34,7 @@
 			<h2 class="{{ include.type }}-subheading">{{ page.subtitle }}</h2>
 			{% endif %}
 		  {% endif %}
-		  
+
 		  {% if include.type == "post" %}
 		  <span class="post-meta">Posted on {{ page.date | date: "%B %-d, %Y" }}</span>
 		  {% endif %}
@@ -45,6 +45,8 @@
   <span class='img-desc'></span>
 </div>
 {% endif %}
+
+{% if page.title or page.subtitle %}
 <div class="intro-header no-img">
   <div class="container">
     <div class="row">
@@ -55,11 +57,11 @@
 		    {% if include.type == "page" %}
             <hr class="small">
             <span class="{{ include.type }}-subheading">{{ page.subtitle }}</span>
-			{% else %}
-			<h2 class="{{ include.type }}-subheading">{{ page.subtitle }}</h2>
-			{% endif %}
+			  {% else %}
+			      <h2 class="{{ include.type }}-subheading">{{ page.subtitle }}</h2>
+			  {% endif %}
 		  {% endif %}
-		  
+
 		  {% if include.type == "post" %}
 		  <span class="post-meta">Posted on {{ page.date | date: "%B %-d, %Y" }}</span>
 		  {% endif %}
@@ -68,6 +70,8 @@
     </div>
   </div>
 </div>
+{% endif %}
+
 </header>
 
 
