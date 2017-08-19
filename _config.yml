@@ -119,7 +119,8 @@ title-separator: "-"
 timezone: "Europe/Lisbon"
 markdown: kramdown
 highlighter: rouge
-permalink: /:year-:month-:day-:title/
+permalink: /news/:year-:month-:day-:title/
+paginate_path: /news/page:num/
 paginate: 5
 
 kramdown:

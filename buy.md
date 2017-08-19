@@ -45,12 +45,11 @@ Thank you!
   </div>
   <br />
 
+  <input type="hidden" name="cmd" value="_s-xclick">
+  <input type="hidden" name="hosted_button_id" value="U8NW3WZYB7YTS">
   <input type="hidden" name="amount" value="">
   <input type="hidden" name="tax" value="">
   <input type="hidden" name="shipping" value="">
-
-  <input type="hidden" name="cmd" value="_s-xclick">
-  <input type="hidden" name="hosted_button_id" value="U8NW3WZYB7YTS">
   <input type="image" src="https://www.paypalobjects.com/webstatic/en_US/i/btn/png/btn_buynow_107x26.png" alt="Buy Now" name="submit">
   <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
 </form>
