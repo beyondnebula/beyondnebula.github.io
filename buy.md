@@ -1,7 +1,7 @@
 ---
 layout: page
-js: /js/buy.js
 bigimg: /img/buy_game.jpg
+js: /js/buy.js
 ---
 
 ### Box Contents
