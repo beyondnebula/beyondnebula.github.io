@@ -2,9 +2,10 @@
 layout: page
 bigimg: /img/buy_game.jpg
 js: /js/buy.js
+title:
 ---
 
-### Box ContentsXXX
+### Box Contents
 - Set of 54 chips for each player (this is a two player game)
 - Soft table board 59cm x 42cm
 - Set of dices: 5x D20, 1x D10, 1x D6
