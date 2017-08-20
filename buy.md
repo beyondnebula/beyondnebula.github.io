@@ -46,8 +46,10 @@ Thank you!
   <br />
 
   <input type="hidden" name="cmd" value="_xclick">
-  <input type="hidden" name="hosted_button_id" value="U8NW3WZYB7YTS">
+  <input type="hidden" name="business" value="support@beyondnebula.com">
+  <input type="hidden" name="item_name" value="Beyond Nebula Game">
   <input type="hidden" name="amount" value="">
+  <input type="hidden" name="currency_code" value="EUR">
   <input type="hidden" name="tax" value="">
   <input type="hidden" name="shipping" value="">
   <input type="image" src="https://www.paypalobjects.com/webstatic/en_US/i/btn/png/btn_buynow_107x26.png" alt="Buy Now" name="submit">
