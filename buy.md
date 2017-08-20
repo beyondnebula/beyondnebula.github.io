@@ -2,7 +2,7 @@
 layout: page
 bigimg: /img/buy_game.jpg
 js: /js/buy.js
-title:
+title: X
 ---
 
 ### Box Contents
