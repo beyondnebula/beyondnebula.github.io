@@ -1,9 +1,9 @@
 ---
 layout: page
+use-site-title: false
 bigimg: /img/buy_game.jpg
 js: /js/buy.js
 ---
-
 
 ### Box Contents
 - Set of 54 chips for each player (this is a two player game)
