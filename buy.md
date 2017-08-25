@@ -1,6 +1,6 @@
 ---
 layout: page
-use-site-title: false
+use-site-title: true
 bigimg: /img/buy_game.jpg
 js: /js/buy.js
 ---
