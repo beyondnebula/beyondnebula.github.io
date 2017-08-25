@@ -4,6 +4,7 @@ var main = {
 
   bigImgEl : null,
   numImgs : null,
+  currentImg : 1,
 
   init : function() {
     // Shorten the navbar after scrolling a little bit down
@@ -68,68 +69,76 @@ var main = {
 
   initImgs : function() {
     // If the page was large images to randomly select from, choose an image
-    if ($("#header-big-imgs").length > 0) {
-      main.bigImgEl = $("#header-big-imgs");
-      main.numImgs = main.bigImgEl.attr("data-num-img");
+    if ($("#header-big-imgs").length < 1) {
+      return;
+    }
 
-          // 2fc73a3a967e97599c9763d05e564189
+    main.bigImgEl = $("#header-big-imgs");
+    main.numImgs = main.bigImgEl.attr("data-num-img");
+
+    // 2fc73a3a967e97599c9763d05e564189
 	  // set an initial image
 	  var imgInfo = main.getImgInfo();
 	  var src = imgInfo.src;
 	  var desc = imgInfo.desc;
-  	  main.setImg(src, desc);
+	  main.setImg(src, desc);
 
 	  // For better UX, prefetch the next image so that it will already be loaded when we want to show it
-  	  var getNextImg = function() {
-	    var imgInfo = main.getImgInfo();
-	    var src = imgInfo.src;
-	    var desc = imgInfo.desc;
+	  var getNextImg = function() {
 
-		var prefetchImg = new Image();
+      main.currentImg = main.currentImg + 1;
+      if (main.currentImg > main.numImgs) {
+        main.currentImg = 1;
+      }
+
+      var imgInfo = main.getImgInfo();
+      var src = imgInfo.src;
+      var desc = imgInfo.desc;
+
+  		var prefetchImg = new Image();
   		prefetchImg.src = src;
-		// if I want to do something once the image is ready: `prefetchImg.onload = function(){}`
+  		// if I want to do something once the image is ready: `prefetchImg.onload = function(){}`
 
-  		setTimeout(function(){
-                  var img = $("<div></div>").addClass("big-img-transition").css("background-image", 'url(' + src + ')');
+		  setTimeout(function(){
+        var img = $("<div></div>").addClass("big-img-transition").css("background-image", 'url(' + src + ')');
   		  $(".intro-header.big-img").prepend(img);
-  		  setTimeout(function(){ img.css("opacity", "1"); }, 50);
 
-		  // after the animation of fading in the new image is done, prefetch the next one
-  		  //img.one("transitioned webkitTransitionEnd oTransitionEnd MSTransitionEnd", function(){
-		  setTimeout(function() {
-		    main.setImg(src, desc);
-			img.remove();
-  			getNextImg();
-		  }, 1000);
-  		  //});
+        setTimeout(function(){ img.css("opacity", "1"); }, 50);
+
+        setTimeout(function() {
+  		    main.setImg(src, desc);
+  			  img.remove();
+    			getNextImg();
+  		  }, 1000);
+
   		}, 6000);
-  	  };
+	  };
 
 	  // If there are multiple images, cycle through them
 	  if (main.numImgs > 1) {
   	    getNextImg();
 	  }
-    }
   },
 
   getImgInfo : function() {
-  	var randNum = Math.floor((Math.random() * main.numImgs) + 1);
+  	//var randNum = Math.floor((Math.random() * main.numImgs) + 1);
+    randNum = main.currentImg;
     var src = main.bigImgEl.attr("data-img-src-" + randNum);
-	var desc = main.bigImgEl.attr("data-img-desc-" + randNum);
+    var desc = main.bigImgEl.attr("data-img-desc-" + randNum);
 
-	return {
-	  src : src,
-	  desc : desc
-	}
+  	return {
+  	  src : src,
+  	  desc : desc
+  	}
   },
 
   setImg : function(src, desc) {
-	$(".intro-header.big-img").css("background-image", 'url(' + src + ')');
-	if (typeof desc !== typeof undefined && desc !== false) {
-	  $(".img-desc").text(desc).show();
-	} else {
-	  $(".img-desc").hide();
-	}
+  	$(".intro-header.big-img").css("background-image", 'url(' + src + ')');
+  	if (typeof desc !== typeof undefined && desc !== false) {
+  	  $(".img-desc").text(desc).show();
+  	} else {
+  	  $(".img-desc").hide();
+  	}
   }
 };
 
