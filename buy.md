@@ -1,20 +1,20 @@
 ---
 layout: page
-use-site-title: true
+title: Buy
 bigimg: /img/buy_game.jpg
 js: /js/buy.js
 ---
 
-### Box Contents
+#### Box Contents
 - Set of 54 chips for each player (this is a two player game)
 - Soft table board 59cm x 42cm
 - Set of dices: 5x D20, 1x D10, 1x D6
 
-### Box Specifications
+#### Box Specifications
 - Size:  8cm x 8cm x 43cm
 - Weight: 430g
 
-### Shipping
+#### Shipping
 We'll usually ship within 5 business days.
 
 The total price varies according to shipping region, corresponding shipping price and applicable tax rate. Please make sure you **choose the appropriate shipping region when buying.**
