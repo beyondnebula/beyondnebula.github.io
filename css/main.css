@@ -43,6 +43,11 @@ hr.small {
   border-radius: 3px;
 }
 
+input[type=submit] {
+  background-color: #ea9d00;
+  color: white;
+}
+
 .main-content {
   padding-top: 80px;
 }
