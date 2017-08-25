@@ -7,7 +7,7 @@ If you have any questions or suggestions regarding the game, please leave your c
 
 <form action="https://formspree.io/support@beyondnebula.com" method="POST">
 
-  <div class="form-group">      
+  <div class="form-group">
     <div class="row">
       <div class="col-sm-6">
         <input class="form-control " type="text" name="name" placeholder="Your name here">
@@ -27,6 +27,7 @@ If you have any questions or suggestions regarding the game, please leave your c
   </div>
 
   <input type="hidden" name="_subject" value="Beyond Nebula contact">
+  <input type="hidden" name="_next" value="http://beyondnebula.com/contact-thanks">
 
   <div class="form-group">
     <div class="row">
