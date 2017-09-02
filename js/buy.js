@@ -2,11 +2,11 @@
 
 var buy = {
 
-  base_price : 44.72,
+  base_price : 55,
 
   prices : {
-    pt: {tax: 10.28, shipping: 5.6},
-    eu: {tax: 10.28, shipping: 9.9},
+    pt: {tax: 0, shipping: 5.6},
+    eu: {tax: 0, shipping: 9.9},
     non_eu: {tax: 0, shipping: 9.9},
     world: {tax: 0, shipping: 17.1}
   },
@@ -19,13 +19,13 @@ var buy = {
 
     // Set labels
     $("#label_price")[0].innerHTML = buy.base_price;
-    $("#label_tax")[0].innerHTML = buy.prices[region]['tax'];
+    //$("#label_tax")[0].innerHTML = buy.prices[region]['tax'];
     $("#label_shipping")[0].innerHTML = buy.prices[region]['shipping'];
     $("#label_total")[0].innerHTML = total_price;
 
     // Set PayPal data
     $('input[name="amount"]')[0].value = buy.base_price;
-    $('input[name="tax"]')[0].value = buy.prices[region]['tax'];
+    //$('input[name="tax"]')[0].value = buy.prices[region]['tax'];
     $('input[name="shipping"]')[0].value = buy.prices[region]['shipping'];
 
   },

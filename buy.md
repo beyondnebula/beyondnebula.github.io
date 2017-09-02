@@ -26,17 +26,13 @@ Thank you!
   <label>Choose your region:</label>
   <select id="region_selection" name="region">
     <option value="pt">Portugal </option>
-    <option value="eu">European Union</option>
-    <option value="non_eu">Europe outside EU</option>
+    <option value="eu">Europe</option>
     <option value="world">World</option>
   </select>
   <br />
 
   <div>
     <label>Price:</label> <span id="label_price"></span> <span>EUR</span>
-  </div>
-  <div>
-    <label>Tax:</label> <span id="label_tax"></span> <span>EUR</span>
   </div>
   <div>
     <label>Shipping:</label> <span id="label_shipping"></span> <span>EUR</span>
